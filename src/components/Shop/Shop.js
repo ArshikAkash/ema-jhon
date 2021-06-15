@@ -13,7 +13,7 @@ const Shop = () => {
     const [cart, setCart] = useState([]);
 
     useEffect(() => {
-        fetch('https://tranquil-dawn-83509.herokuapp.com/')
+        fetch('https://tranquil-dawn-83509.herokuapp.com/products')
             .then((res) => res.json())
             .then((data) => setProducts(data));
     }, []);
